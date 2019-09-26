@@ -16,7 +16,6 @@ def worker(name,url,omxplayer_extra_options,coordinates,stopworker):
                      --video_queue 1 \
                      --live \
                      --timeout 60 \
-                     --aidx -1 \
                      -o hdmi \
                      --threshold 0 \
                      ' + ' ' + omxplayer_extra_options + ' ' + url + ' --win ' + '"' + " ".join(map(str,coordinates))  + '"' + ' --dbus_name org.mpris.MediaPlayer2.' + name
